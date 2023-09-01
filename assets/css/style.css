@@ -26,6 +26,8 @@ h3 {
 
 header {
     text-align: center;
+    background:black;
+    border-radius: 10px;
 }
 
 nav ul {
@@ -156,5 +158,24 @@ img {
     scrollbar-color: #e100ff #8a0d64; /* Thumb and track colors */
 }
 
+/* Style for the "Go Back" button */
+.goback-button {
+    background-color: #007BFF; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for the button */
+  .goback-button:hover {
+    background-color: #0056b3; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+  }
+  
 
 /* test */

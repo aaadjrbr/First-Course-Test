@@ -39,3 +39,13 @@ document.addEventListener('DOMContentLoaded', function() {
         modulesList.classList.toggle('show'); // Toggle the show class
     });
 });
+
+// Function to check if the screen is too small
+function isScreenTooSmall() {
+    return window.innerWidth < 768; // Adjust the breakpoint as needed
+}
+
+// Function to go back to the previous page
+function goBack() {
+    window.history.back();
+  }
