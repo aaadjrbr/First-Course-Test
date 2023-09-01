@@ -115,3 +115,9 @@ img {
     border-radius: 15px;
 }
 
+/* Hide the modules list on small screens */
+@media (max-width: 768px) {
+    .modules-list {
+        display: none;
+    }
+}

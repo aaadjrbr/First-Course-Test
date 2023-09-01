@@ -28,3 +28,14 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 3000); // Change slide every 3 seconds
 }
+
+//For the side menu in small screens
+
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('toggleModules');
+    const modulesList = document.querySelector('.modules-list');
+
+    toggleButton.addEventListener('click', function() {
+        modulesList.classList.toggle('show'); // Toggle the show class
+    });
+});
