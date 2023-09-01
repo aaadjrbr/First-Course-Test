@@ -19,13 +19,12 @@ h3 {
     font-size: 0.9rem;
 }
 
-header, nav, main {
+ nav, main {
     margin: 20px;
     padding: 20px;
 }
 
 header {
-    background-color: #333;
     text-align: center;
 }
 
@@ -52,18 +51,18 @@ a:hover {
 .video-container {
     position: relative;
     overflow: hidden;
-    padding-bottom: 63%; /* Roughly 3:5 aspect ratio (slightly rectangular) */
+    padding-bottom: 60%; /* Roughly 3:5 aspect ratio (slightly rectangular) */
     height: 0;
     text-align: center; /* Center horizontally */
 }
 
 .video-container iframe {
     position: absolute;
-    border-radius: 5px;
+    border-radius: 20px;
     top: 0;
     left: 0;
-    width: 80%; /* Adjust the width as needed */
-    height: 80%; /* Adjust the height as needed */
+    width: 70%; /* Adjust the width as needed */
+    height: 70%; /* Adjust the height as needed */
 }
 
 /* Additional CSS for the new layout */
@@ -111,6 +110,7 @@ a:hover {
 
 img {
     width: 80%;
+    padding: 5px;
     height: 230px;
     border-radius: 15px;
 }
@@ -121,3 +121,40 @@ img {
         display: none;
     }
 }
+
+/* zoom in on the slides images */
+.hover-effect img {
+    transition: transform 0.3s ease;
+}
+.hover-effect:hover img {
+    transform: scale(1.3);
+}
+
+/* Hide the scrollbar but keep functionality */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+/* Track (the area behind the thumb) */
+::-webkit-scrollbar-track {
+    background: #c3bcd4; /* Background color of the track */
+}
+
+/* Thumb (the draggable scrolling handle) */
+::-webkit-scrollbar-thumb {
+    background: #e100ff; /* Background color of the thumb */
+}
+
+/* On hover, style the thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: #8a0d64;
+}
+
+/* Firefox scrollbar */
+* {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #e100ff #8a0d64; /* Thumb and track colors */
+}
+
+
+/* test */
