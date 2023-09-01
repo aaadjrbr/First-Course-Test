@@ -12,7 +12,7 @@ h1 {
 
 h2 {
     font-size: 1rem;
-    color: blue;
+    color: white;
 }
 
 h3 {
@@ -48,3 +48,70 @@ a:hover {
     text-decoration: underline;
     color: #0056b3;
 }
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60%; /* Roughly 3:5 aspect ratio (slightly rectangular) */
+    height: 0;
+    text-align: center; /* Center horizontally */
+}
+
+.video-container iframe {
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    width: 70%; /* Adjust the width as needed */
+    height: 70%; /* Adjust the height as needed */
+}
+
+/* Additional CSS for the new layout */
+.course-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.modules-list {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.modules-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modules-list li {
+    margin-bottom: 10px;
+}
+
+.videos-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px; /* Add margin to create space between videos and modules list */
+}
+
+.video-container {
+    margin-bottom: 20px;
+}
+
+.slideshow-container {
+    max-width: 360px;
+    margin: auto;
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 80%;
+    height: 230px;
+    border-radius: 15px;
+}
+
