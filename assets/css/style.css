@@ -52,18 +52,18 @@ a:hover {
 .video-container {
     position: relative;
     overflow: hidden;
-    padding-bottom: 60%; /* Roughly 3:5 aspect ratio (slightly rectangular) */
+    padding-bottom: 63%; /* Roughly 3:5 aspect ratio (slightly rectangular) */
     height: 0;
     text-align: center; /* Center horizontally */
 }
 
 .video-container iframe {
     position: absolute;
-    border-radius: 20px;
+    border-radius: 5px;
     top: 0;
     left: 0;
-    width: 70%; /* Adjust the width as needed */
-    height: 70%; /* Adjust the height as needed */
+    width: 80%; /* Adjust the width as needed */
+    height: 80%; /* Adjust the height as needed */
 }
 
 /* Additional CSS for the new layout */
